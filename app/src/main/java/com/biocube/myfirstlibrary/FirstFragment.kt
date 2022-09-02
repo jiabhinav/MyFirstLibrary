@@ -46,6 +46,7 @@ class FirstFragment : Fragment() {
         val thread = Thread {
             try {
                 DownloadImage(requireActivity(),mFileName).storeDownload(binding.image)
+                DownloadImage(requireActivity(),mFileName)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
