@@ -37,7 +37,7 @@ class DownloadImage(val context: Context,val filename:String) {
         }
     }
 
-    public fun getFilePath(): String {
+     fun getFilePath(): String {
         val mFileName = filename
         val inputStream  =context.getFileStreamPath(mFileName)
         val filePath: String = inputStream.getAbsolutePath()
